@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="./style.css">
+    <!--TAILWIND-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--ICONO-->
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+    <title>Netflix Venezuela: Ve series online, ve peliculas online</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            top: 0px;
+        }
+    </style>
+    <section
+        class="bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/d049a3bd-40ee-411b-9f16-d1def798d43b/5a0ee99b-9115-4ef8-b329-8ae9d7a9e340/VE-es-20230313-popsignuptwoweeks-perspective_alpha_website_large.jpg')] w-[100%] bg-cover h-[92vh]">
+        <!--CAJA GRADIENT-->
+        <div class="bg-gradient-to-b from-black/80 via-black/20 to-black/80 w-[100%] h-[100%] flex flex-col justify-between ">
+            <nav class="flex items-center justify-around gap-4">
+                <!--LOGO-->
+                <h3 class="font-semibold text-[50px] text-[red] ">
+                    NETFLIX
+                </h3>
+                <!--IDIOMA Y SESION-->
+                <div class="flex item-center gap-4">
+                    <select class="4-[35px] w-[90px] px-[4px] rounded-[5px] bg-transparent text-white">
+                        <option class="bg-stone-400 text-[15px] text-white" value="Español">Español</option>
+                        <option class="bg-stone-400 text-[15px] text-white" value="Ingles">Ingles</option>
+                    </select>
+
+                    <a href="https://www.netflix.com/ve/login">
+                        <button class="text-white rounded px-[15px] py-[5px] bg-[red] hover:bg-red-700">Iniciar
+                            sesion</button>
+                    </a>
+                </div>
+            </nav>
+            <div class="flex flex-col w-[100%] h-[90%] justify-center item-center gap-4">
+                <h2 class="font-sans font-black text-white text-5xl text-center">Películas y series ilimitadas y mucho más</h2>
+                <h2 class="font-sans font-black text-white text-[24px] text-center ">Disfruta donde quieras. Cancela cuando quieras.
+                </h2>
+                <h2 class="font-sans font-black text-white text-[16px] text-center ">¿Quieres ver Netflix ya? Ingresa tu email para
+                    crear una cuenta o reiniciar tu membresía de Netflix.</h2>
+                    <div class="flex justify-center items-center mt-[24px] relative max-[650px]:flex-col">
+                        <input id='email'
+                            class="flex justify-center items-center pl-4 pt-2 gap-2 w-[45%] h-[56px] mr-3 border-solid border-gray-500 border-[1px] rounded-[3px] bg-[#211d1d]/50 relative max-[650px]:w-[90%] max-[650px]:h-[48px] max-[650px]:mb-4"
+                            type="text">
+                        <label class="absolute top-[30%] left-[17%] z-10 text-white/70 max-[650px]:top-[11%] max-[650px]:left-[7%]" for="email">Email</label>
+                        <button
+                            class="flex items-center justify-center w-[21%] h-[56px] bg-[color:var(--netflix-red)] text-white px-[16px] rounded-[3px] mr-6 py-[6px] font-['Netflix_Md'] leading-normal text-[24px] max-[650px]:w-[35%] max-[650px]:text-[18px]">
+                            Comenzar
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                class="Hawkins-Icon Hawkins-Icon-Standard">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.29297 19.2928L14.5859 12L7.29297 4.70706L8.70718 3.29285L16.7072 11.2928C16.8947 11.4804 17.0001 11.7347 17.0001 12C17.0001 12.2652 16.8947 12.5195 16.7072 12.7071L8.70718 20.7071L7.29297 19.2928Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </button>
+                    </div>
+        </div>
+
+    </section>
+
+    <!--BLOQUE 2-->
+    <section class="w-[100%] h-[90vh] bg-[#000000] border-t-[7px]  border-gray-700">
+        <div class="flex justify-center gap-4 mt-[50px]">
+            <div class="text-white font-bold font-sans flex my-auto  h-full justify-center   items-center  flex-col sm:w-1/2 w-full p-12 ">
+                <h2 class="text-[50px]">
+                    Disfruta en tu TV
+                </h2>
+                <p class="text-[20px] text-white">
+                Chromecast, Apple TV, reproductores de Blu-ray y más.
+                </p>
+            </div>
+
+            <div class="flex items-end justify-end">
+                <div class="relative max-w-2xl  w-full my-auto  overflow-hidden">
+                <img src="./imagenes/tv.png" class="absolute right-0 z-10 ">
+                <video class="p-20 w-full" autoplay="" playsinline="" muted="" loop="">
+                    <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4" type="video/mp4">
+                </video>
+                </div>
+            </div>
+        </div>   
+    </section> 
+
+    <!--BLOQUE 3-->
+    <section class="flex-col sm:flex-row h-full  flex  border-gray-700 border-t-8  min-half-screen  w-full z-50 text-white   bg-black">
+
+        <div class="flex my-auto  h-full justify-center   items-center  flex-col sm:w-1/2 w-full p-12">
+            <div>
+                <div class="relative flex justify-center w-full">
+                    <div class="absolute w-[270px] flex items-center justify-between top-[200px]  bg-black border border-gray-500 rounded-xl p-2">
+                    <img class="h-16" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png">
+                            <div class="flex flex-col item-center h-full justify-center">
+                                <p class="w-full text-center ">Stranger Things</p>
+                                <p class="w-full text-center text-blue-800">Descargando...</p>
+                            </div>
+                            <img class="w-[40px] h-[40px]" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" alt="">
+                    </div>
+                </div>
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"/>
+            </div>
+        </div>
+    
+        <div class="flex my-auto  h-full justify-center   items-center  flex-col sm:w-1/2 w-full p-12">
+            <div class="text-4xl text-left  w-full font-bold">Descarga tus series</div>
+            <div class="text-4xl text-left  w-full font-bold">para verlas offline</div>
+            <div class="text-xl mt-3">Guarda tu  contenido  favorito y tendras tiempo siempre algo que ver.</div>
+        </div>
+    </section>
+
+    <!--BLOQUE 4-->
+    <section class="flex flex-col sm:flex-row  border-gray-700 border-t-8  min-half-screen  w-full z-50 text-white bg-black h-[90vh]">
+        <div class="flex my-auto  h-full justify-center   items-center  flex-col sm:w-1/2 w-full p-12 ">
+            <div class="text-4xl text-left  w-full font-bold">Disfruta donde quieras</div>
+            <div class="text-xl">Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo adicional.</div>
+        </div>
+            <div class="sm:w-1/2 w-full bg-black mt-[50px]">
+                <div class="relative max-w-2xl w-full my-auto  overflow-hidden">
+                    <img alt="" class="absolute  right-0 z-10" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png">
+                    <video class=" p-20 w-full" autoplay="" playsinline="" muted="" loop="">
+                    <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" type="video/mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+    </section>
+    
+    <!--BLOQUE 5-->
+    <section class="w-[100%] h-[90vh] bg-[#000000] border-t-[7px] border-b-[7px] border-gray-700">
+        <div class="flex justify-center items-center">
+            <div class="mt-[50px]">
+                <div class="flex items-end justify-end">
+                <img src="./imagenes/NIÑOS.png " class="h-[450px]">
+                </div>
+            </div>
+    
+            <div class="flex ">
+                <div class=" flex-col text-white font-bold font-sans flex">
+                    <p class="font-sans font-bold text-[60px]">Crea perfiles para niños</p>
+                    <p class="font-sans font-bold text-[20px]">Los niños vivirán aventuras con sus <br>personajes favoritos en un espacio<br> diseñado exclusivamente para ellos, sin<br> costo con tu membresía.</p>
+                </div>
+            </div> 
+        </div>
+        </section>
+
+    <!-- BLOQUE 6 -- PREGUNTAS-->
+    <section class="grid grid-cols-[1fr_586px_586px_1fr] py-[64px] bg-black items-center justify-items-center xl:grid-cols-[1fr_586px_586px_1fr] lg:grid-cols-[1fr_420px_420px_1fr] md:grid-cols-[1fr_390px_390px_1fr] max-[850px]:grid-cols-[1fr_45%_45%_1fr]">
+
+        <h2 class="text-[48px] text-white col-span-4 max-[650px]:text-[36px]">Preguntas frecuentes</h2>
+
+        <!-- Pregunta 1 -->
+        <ul id="tocame" class="col-start-2 col-end-4 mt-6">
+            <li>
+                <button class="w-[100%]">
+                    <label
+                        class="flex items-center justify-between text-white text-[24px] font-['Netflix_Rg'] p-[24px] cursor-pointer bg-[#2D2D2D]"
+                        for="primero">¿Qué es Netflix?
+                        <svg class="text-white " width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="default-ltr-cache-13srxut e1tuurd64"
+                            data-name="Add" alt="">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2V11H2V13H11V22H13V13H22V11H13V2H11Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </label>
+                </button>
+
+                <input type="checkbox" name="acordeon" id="primero">
+
+                <div class="content flex flex-col mt-[1px] bg-[#2D2D2D]">
+                    <span class="text-white text-[24px] font-['Netflix_Rg']">Netflix es un servicio de streaming que
+                        ofrece
+                        una gran variedad de películas, series y documentales premiados en casi cualquier pantalla
+                        conectada
+                        a internet.</span>
+                    <span class="text-white text-[24px] font-['Netflix_Rg']">Todo lo que quieras ver, sin límites ni
+                        comerciales, a un costo muy accesible. Siempre hay algo
+                        nuevo por descubrir, ¡y todas las semanas se agregan más películas y series!</span>
+            </li>
+        </ul>
+
+        <!-- Pregunta 2 -->
+        <ul id="tocame" class="col-start-2 col-end-4 mt-2">
+            <li>
+                <button class="w-[100%]">
+                    <label
+                        class="flex items-center justify-between text-white text-[24px] font-['Netflix_Rg'] p-[24px] cursor-pointer bg-[#2D2D2D]"
+                        for="segundo">¿Cuánto cuesta Netflix?
+                        <svg class="text-white " width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="default-ltr-cache-13srxut e1tuurd64"
+                            data-name="Add" alt="">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2V11H2V13H11V22H13V13H22V11H13V2H11Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </label>
+                </button>
+
+                <input type="checkbox" name="acordeon" id="segundo">
+
+                <div class="content flex flex-col mt-[1px] bg-[#2D2D2D]">
+                    <span class="text-white text-[24px] font-['Netflix_Rg']">Disfruta Netflix en tu smartphone, tablet,
+                        smart TV, laptop o dispositivo de streaming, todo por una tarifa plana mensual. Planes desde
+                        USD3,99 hasta USD7,99 al mes. Sin costos adicionales ni contratos.</span>
+            </li>
+        </ul>
+
+
+        <!-- Pregunta 3 -->
+        <ul id="tocame" class="col-start-2 col-end-4 mt-2">
+            <li>
+                <button class="w-[100%]">
+                    <label
+                        class="flex items-center justify-between text-white text-[24px] font-['Netflix_Rg'] p-[24px] cursor-pointer bg-[#2D2D2D]"
+                        for="tercero">¿Dónde puedo ver Netflix?
+                        <svg class="text-white " width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="default-ltr-cache-13srxut e1tuurd64"
+                            data-name="Add" alt="">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2V11H2V13H11V22H13V13H22V11H13V2H11Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </label>
+                </button>
+
+                <input type="checkbox" name="acordeon" id="tercero">
+
+                <div class="content flex flex-col mt-[1px] bg-[#2D2D2D]">
+                    <span class="text-white text-[24px] font-['Netflix_Rg']">Disfruta donde quieras, cuando quieras.
+                        Inicia sesión en tu cuenta de Netflix para ver contenido al instante a través de netflix.com
+                        desde tu computadora personal o en cualquier dispositivo con conexión a internet que cuente con
+                        la app de Netflix, como smart TV, smartphones, tablets, reproductores multimedia y consolas de
+                        juegos.</span>
+                    <span class="text-white text-[24px] font-['Netflix_Rg']">Además, puedes descargar tus series
+                        favoritas con iOS, Android o la app para Windows 10. Con la función de descarga, puedes ver
+                        donde vayas y sin conexión a internet. Lleva Netflix contigo adonde sea.</span>
+            </li>
+        </ul>
+
+
+        <!-- Pregunta 4 -->
+        <ul id="tocame" class="col-start-2 col-end-4 mt-2">
+            <li>
+                <button class="w-[100%]">
+                    <label
+                        class="flex items-center justify-between text-white text-[24px] font-['Netflix_Rg'] p-[24px] cursor-pointer bg-[#2D2D2D]"
+                        for="cuarto">¿Cómo cancelo?
+                        <svg class="text-white " width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="default-ltr-cache-13srxut e1tuurd64"
+                            data-name="Add" alt="">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2V11H2V13H11V22H13V13H22V11H13V2H11Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </label>
+                </button>
+
+                <input type="checkbox" name="acordeon" id="cuarto">
+
+                <div class="content flex flex-col mt-[1px] bg-[#2D2D2D]">
+                    <span class="text-white text-[24px] font-['Netflix_Rg']">Netflix es flexible. Sin contratos molestos
+                        ni compromisos. Cancela la membresía online con solo dos clics. No hay cargos por cancelación.
+                        Empieza y termina cuando quieras.</span>
+            </li>
+        </ul>
+
+        <!-- Pregunta 5 -->
+        <ul id="tocame" class="col-start-2 col-end-4 mt-2">
+            <li>
+                <button class="w-[100%]">
+                    <label
+                        class="flex items-center justify-between text-white text-[24px] font-['Netflix_Rg'] p-[24px] cursor-pointer bg-[#2D2D2D]"
+                        for="quinto">¿Qué puedo ver en Netflix?
+                        <svg class="text-white " width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="default-ltr-cache-13srxut e1tuurd64"
+                            data-name="Add" alt="">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2V11H2V13H11V22H13V13H22V11H13V2H11Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </label>
+                </button>
+
+                <input type="checkbox" name="acordeon" id="quinto">
+
+                <div class="content flex flex-col mt-[1px] bg-[#2D2D2D]">
+                    <span class="text-white text-[24px] font-['Netflix_Rg']">Netflix tiene un amplio catálogo de
+                        películas, series, documentales, animes, originales premiados y más. Todo lo que quieras ver,
+                        cuando quieras.</span>
+            </li>
+        </ul>
+
+        <!-- Pregunta 6 -->
+        <ul id="tocame" class="col-start-2 col-end-4 mt-2">
+            <li>
+                <button class="w-[100%]">
+                    <label
+                        class="flex items-center justify-between text-white text-[24px] font-['Netflix_Rg'] p-[24px] cursor-pointer bg-[#2D2D2D]"
+                        for="sexto">¿Es bueno Netflix para los niños?
+                        <svg class="text-white " width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="default-ltr-cache-13srxut e1tuurd64"
+                            data-name="Add" alt="">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2V11H2V13H11V22H13V13H22V11H13V2H11Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </label>
+                </button>
+
+                <input type="checkbox" name="acordeon" id="sexto">
+
+                <div class="content flex flex-col mt-[1px] bg-[#2D2D2D]">
+                    <span class="text-white text-[24px] font-['Netflix_Rg']">La experiencia de Netflix para niños está
+                        incluida en la membresía para que los padres tengan el control mientras los peques disfrutan
+                        series y películas familiares en su propio espacio.</span>
+                    <span class="text-white text-[24px] font-['Netflix_Rg']">Todo lo que quieras ver, sin límites ni
+                        comerciales, a un costo muy accesible. Siempre hay algo
+                        nuevo por descubrir, ¡y todas las semanas se agregan más películas y series!</span>
+            </li>
+        </ul>
+
+        <!--PIE DE PAGINA-->
+        <form class="flex flex-col mt-[50px] col-start-2 col-end-4 text-white" action="">
+            <h3 class="text-[20px] text-center">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o
+                reiniciar tu membresía de Netflix.</h3>
+            <!--EMAIL DEUDOR-->
+            <div class="flex justify-center items-center mt-[24px] relative max-[650px]:flex-col">
+                <input id='email'
+                    class="flex justify-center items-center pl-4 pt-2 gap-2 w-[45%] h-[56px] mr-3 border-solid border-gray-500 border-[1px] rounded-[3px] bg-[#211d1d]/50 relative max-[650px]:w-[90%] max-[650px]:h-[48px] max-[650px]:mb-4"
+                    type="text">
+                <label class="absolute top-[30%] left-[17%] z-10 text-white/70 max-[650px]:top-[11%] max-[650px]:left-[7%]" for="email">Email</label>
+                <button
+                    class="flex items-center justify-center w-[21%] h-[56px] bg-[color:var(--netflix-red)] text-white px-[16px] rounded-[3px] mr-6 py-[6px] font-['Netflix_Md'] leading-normal text-[24px] max-[650px]:w-[35%] max-[650px]:text-[18px]">
+                    Comenzar
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="Hawkins-Icon Hawkins-Icon-Standard">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.29297 19.2928L14.5859 12L7.29297 4.70706L8.70718 3.29285L16.7072 11.2928C16.8947 11.4804 17.0001 11.7347 17.0001 12C17.0001 12.2652 16.8947 12.5195 16.7072 12.7071L8.70718 20.7071L7.29297 19.2928Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="grid grid-cols-[1fr_586px_586px_1fr] py-[64px] bg-black text-white/[0.7] font-['Netflix_Rg'] xl:grid-cols-[1fr_586px_586px_1fr] lg:grid-cols-[1fr_420px_420px_1fr] md:grid-cols-[1fr_390px_390px_1fr] max-[850px]:grid-cols-[1fr_45%_45%_1fr]">
+        <div class="col-start-2 col-end-3 py-[12px]">
+            <span>¿Preguntas? Llama al <a class="underline" href="">1 (408) 469-4467 (USA)</a></span>
+        </div>
+
+        <div class="col-start-2 col-end-4 py-[12px]">
+            <ul class="grid grid-cols-3 gap-3 py-[12px]">
+                <li><a class="underline text-[14px]" href="">Preguntas frecuentes</a></li>
+                <li><a class="underline text-[14px]" href="">Términos de las tarjetas de regalo</a></li>
+                <li><a class="underline text-[14px]" href="">Centro de ayuda</a></li>
+                <li><a class="underline text-[14px]" href="">Cuenta</a></li>
+                <li><a class="underline text-[14px]" href="">Prensa</a></li>
+                <li><a class="underline text-[14px]" href="">Relaciones con inversionistas</a></li>
+                <li><a class="underline text-[14px]" href="">Empleo</a></li>
+                <li><a class="underline text-[14px]" href="">Formas de ver</a></li>
+                <li><a class="underline text-[14px]" href="">Términos de uso</a></li>
+                <li><a class="underline text-[14px]" href="">Privacidad</a></li>
+                <li><a class="underline text-[14px]" href="">Preferencias de cookies</a></li>
+                <li><a class="underline text-[14px]" href="">Información corporativa</a></li>
+                <li><a class="underline text-[14px]" href="">Contáctanos</a></li>
+                <li><a class="underline text-[14px]" href="">Prueba de velocidad</a></li>
+                <li><a class="underline text-[14px]" href="">Avisos legales</a></li>
+                <li><a class="underline text-[14px]" href="">Solo en Netflix</a></li>
+            </ul>
+        </div>
+
+        <div class="col-start-2 col-end-3 py-[12px]">
+            <!--IDIOMA-->
+            <div
+                class="selector flex justify-center items-center gap-2 w-[131px] h-[32px] mr-6 border-solid border-gray-400 border-[1px] rounded-[3px] bg-[#211d1d]/50 relative">
+                <img class="w-[17px] h-[17px] absolute top-[5px] left-2 " src="iconos/planeta.png" alt="">
+                <select class="appearance-none text-white bg-transparent text-[16px] w-[100%] px-[34px] py-[6px]"
+                    name="select">
+                    <option value="Español" selected>Español</option>
+                    <option value="English">Ingles</option>
+                </select>
+                <img class="w-[10px] absolute top-[5px] right-4" src="iconos/flechabajo.png" alt="">
+            </div>
+
+            <div class="py-[18px]">
+                <a class="text-[14px] text-white/[0.7] font-['Netflix_Rg']" href="">Netflix Town</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
